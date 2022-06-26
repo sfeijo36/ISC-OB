@@ -17,6 +17,14 @@ Arquitectura
   Diagrama
   Explicación microservicios
   
+DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
+
+SERVICIOS DE AWS USADOS.
+
+ETC.
+
+
+  
 Cómo pueden comenzar los usuarios con el proyecto.
 
 Dónde pueden recibir ayuda los usuarios con tu proyecto
