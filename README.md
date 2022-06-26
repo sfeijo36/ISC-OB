@@ -26,12 +26,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
     * Subnet-2: 172.16.2.0/24
     
   * Security Group:
-    * Reglas permit de entrada:
-      * from_port = 80
-      * to_port = 80
-      * protocol = "tcp"
-      * cidr_blocks = ["0.0.0.0/0"]
-
+   
     * Reglas Permit de salida:
       * from_port = 0
       * to_port = 0
