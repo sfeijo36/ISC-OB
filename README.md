@@ -19,11 +19,11 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 </p>
 
   
-## DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
+## DATOS DE LA INFRAESTRUCTURA
 
   * Tipo de instancias:
-    * 
-
+    * t3.large
+    
   * CIDR VPC: 172.16.0.0/16
     * Subnet-1: 172.16.1.0/24
     * Subnet-2: 172.16.2.0/24
