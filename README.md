@@ -98,4 +98,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 [infra_deploy.sh](./infra_deploy.sh)
 
-  * Script para realizar deploy de infra y microservicios.
+  * Script para realizar deploy de infra y microservicios que ejecuta los terraform correspondientes.
+    * En una primera instancia se ejecuta un terraform que ejecutará el contenido de [Deployment_Infra](./deployment_infra).
+    * Luego se actualizará el archivo [config](.//deployment_servicios/config) con la información del cluster creado previamente. Este archivo a su vez será utilizado en el [provider](./deployment_servicios/provider.tf) de la ejecución siguiente.
+    * Por ultimo ejecuta el terraform con el contenido de [Deployment_Servicios](./deployment_servicios)
