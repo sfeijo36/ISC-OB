@@ -4,6 +4,8 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 Capturas - GIFs del funcionamiento de la pagina
 
+docs/Multimedia1.gif
+
 Arquitectura
   Diagrama
   Explicación microservicios
