@@ -89,6 +89,6 @@ En cada uno de estos archivos de deployment, la imagen esta como variable la cua
 
 [config](./deployment_servicios/config)
 
-Este archivo contiene la informacion de nuestro cluster EKS, previamente creado mediante el deploy de nuestra info. El mismo es necesario para utilizar en el archivo de [providers.tf](./deployment_servicios/providers.tf).
+Este archivo contiene la informacion de nuestro cluster EKS, previamente creado mediante el deploy de nuestra infra. El mismo es necesario para utilizar en el archivo de [providers.tf](./deployment_servicios/providers.tf).
 
 
