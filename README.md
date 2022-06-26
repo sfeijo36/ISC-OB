@@ -10,7 +10,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 Capturas - GIFs del funcionamiento de la pagina
 <p align="center">
-<img src="docs/Multimedia1.gif" width="800" alt="Online Boutique" />
+<img src="docs/Multimedia1.gif" width="800" alt="Funcionamiento de la página" />
 </p>
 
 ## Arquitectura
@@ -18,6 +18,10 @@ Capturas - GIFs del funcionamiento de la pagina
   Explicación microservicios
   
 ## DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
+
+  * Tipo de instancias:
+    * 
+
   * CIDR VPC: 172.16.0.0/16
     * Subnet-1: 172.16.1.0/24
     * Subnet-2: 172.16.2.0/24
