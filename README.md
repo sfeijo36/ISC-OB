@@ -13,11 +13,11 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 </p>
 
 ## Arquitectura
+
 <p align="center">
 <img src="docs/Diagrama.png" width="800" alt="Diagrama" />
 </p>
 
-docs/Diagrama.png
   
 ## DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
 
