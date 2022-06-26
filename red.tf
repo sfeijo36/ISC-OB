@@ -59,7 +59,7 @@ resource "aws_default_route_table" "route-table" {
   default_route_table_id = aws_vpc.vpc-obligatorio.default_route_table_id
 
   route {
-    cidr_block = var.cidr_blocks
+    cidr_block = var.cidr_blocks_rt
     gateway_id = aws_internet_gateway.Internet-Gateway.id
   }
 

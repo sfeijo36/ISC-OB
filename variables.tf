@@ -22,6 +22,10 @@ variable "cidr_blocks" {
     default = ["0.0.0.0/0"]
 }
 
+variable "cidr_blocks_rt" {
+    default = "0.0.0.0/0"
+}
+
 variable "cidr_subnet1" {
     default =  "172.16.1.0/24"
 }
