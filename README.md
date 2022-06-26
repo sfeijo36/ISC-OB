@@ -108,6 +108,8 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 __Autores :)__
 
 > Lucía Castiñeiras
+
 > Sebastián Feijó
+
 > Damian Alvarez
 
