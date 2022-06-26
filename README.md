@@ -6,7 +6,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 Capturas - GIFs del funcionamiento de la pagina
 <p align="center">
-<img src="docs/Multimedia1.gif" width="300" alt="Online Boutique" />
+<img src="docs/Multimedia1.gif" width="600" alt="Online Boutique" />
 </p>
 
 Arquitectura
