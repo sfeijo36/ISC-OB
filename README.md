@@ -105,11 +105,11 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 
 
-__Autores__ 
+__Autores__ :muscle:
 
-> Lucía Castiñeiras 👩
+> Lucía Castiñeiras :octocat:
 
 > Sebastián Feijó :floppy_disk:
 
-> Damian Alvarez
+> Damian Alvarez 
 
