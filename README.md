@@ -76,7 +76,7 @@ ETC.
 
    * Se utilizaron las variables previamente mencionadas, referenciandolas de la siguiente forma:
 
-    * var.nombre_asignado
+      * var.nombre_asignado
 
 [eks.tf](./deployment_infra/eks.tf)
 
