@@ -13,11 +13,11 @@ Capturas - GIFs del funcionamiento de la pagina
 <img src="docs/Multimedia1.gif" width="800" alt="Online Boutique" />
 </p>
 
-Arquitectura
+## Arquitectura
   Diagrama
   Explicación microservicios
   
-DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
+## DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
   * CIDR VPC: 172.16.0.0/16
     * Subnet-1: 172.16.1.0/24
     * Subnet-2: 172.16.2.0/24
@@ -29,11 +29,11 @@ DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
      cidr_blocks = ["0.0.0.0/0"]
   
 
-SERVICIOS DE AWS USADOS:
-  VPC
-  EKS (Elastic Kubernetes Service)
-  Instancia de EC2 (Utilizada como Bastion) 
-  ECR (Elastic Container Registry)
+## SERVICIOS DE AWS USADOS:
+  * VPC
+  * EKS (Elastic Kubernetes Service)
+  * Instancia de EC2 (Utilizada como Bastion) 
+  * ECR (Elastic Container Registry)
 
 ETC.
 
