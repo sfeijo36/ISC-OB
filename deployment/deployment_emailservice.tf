@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_emailservice" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "emailservice"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_emailservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "emailservice"
           }
@@ -86,7 +86,7 @@ resource "kubernetes_manifest" "service_emailservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "emailservice"
     }
     "spec" = {

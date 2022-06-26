@@ -3,9 +3,8 @@ resource "kubernetes_manifest" "deployment_shippingservice" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "shippingservice"
-      "namespace" = "default"
     }
     "spec" = {
       "selector" = {
@@ -15,8 +14,7 @@ resource "kubernetes_manifest" "deployment_shippingservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "shippingservice"
           }
@@ -90,8 +88,7 @@ resource "kubernetes_manifest" "service_shippingservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "shippingservice"
     }
     "spec" = {

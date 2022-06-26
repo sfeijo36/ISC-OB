@@ -4,7 +4,7 @@ resource "kubernetes_manifest" "deployment_productcatalogservice" {
     "kind" = "Deployment"
     "metadata" = {
       "name" = "productcatalogservice"
-      "namespace" = "default"
+      "namespace" = "boutique"
 
     }
     "spec" = {
@@ -15,7 +15,7 @@ resource "kubernetes_manifest" "deployment_productcatalogservice" {
       }
       "template" = {
         "metadata" = {
-            "namespace" = "default"
+            "namespace" = "boutique"
           "labels" = {
             "app" = "productcatalogservice"
           }
@@ -90,7 +90,7 @@ resource "kubernetes_manifest" "service_productcatalogservice" {
     "kind" = "Service"
     "metadata" = {
       "name" = "productcatalogservice"
-      "namespace" = "default"
+      "namespace" = "boutique"
 
     }
     "spec" = {

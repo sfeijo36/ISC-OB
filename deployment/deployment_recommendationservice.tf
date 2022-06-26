@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_recommendationservice" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "recommendationservice"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_recommendationservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "recommendationservice"
           }
@@ -94,7 +94,7 @@ resource "kubernetes_manifest" "service_recommendationservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "recommendationservice"
     }
     "spec" = {

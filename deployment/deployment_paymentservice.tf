@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_paymentservice" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "paymentservice"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_paymentservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "paymentservice"
           }
@@ -88,7 +88,7 @@ resource "kubernetes_manifest" "service_paymentservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "paymentservice"
     }
     "spec" = {

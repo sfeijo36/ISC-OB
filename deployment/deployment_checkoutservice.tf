@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_checkoutservice" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "checkoutservice"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_checkoutservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "checkoutservice"
           }
@@ -111,7 +111,7 @@ resource "kubernetes_manifest" "service_checkoutservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "checkoutservice"
     }
     "spec" = {

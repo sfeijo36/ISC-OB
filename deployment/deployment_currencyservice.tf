@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_currencyservice" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "currencyservice"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_currencyservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "currencyservice"
           }
@@ -89,7 +89,7 @@ resource "kubernetes_manifest" "service_currencyservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "currencyservice"
     }
     "spec" = {

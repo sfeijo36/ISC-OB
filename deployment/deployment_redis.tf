@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_redis_cart" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "redis-cart"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_redis_cart" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "labels" = {
             "app" = "redis-cart"
           }
@@ -76,7 +76,7 @@ resource "kubernetes_manifest" "service_redis_cart" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "redis-cart"
     }
     "spec" = {

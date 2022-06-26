@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_frontend" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "frontend"
     }
     "spec" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_frontend" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "annotations" = {
             "sidecar.istio.io/rewriteAppHTTPProbers" = "true"
           }
@@ -128,7 +128,7 @@ resource "kubernetes_manifest" "service_frontend" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "frontend"
     }
     "spec" = {
@@ -152,7 +152,7 @@ resource "kubernetes_manifest" "service_frontend_external" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "frontend-external"
     }
     "spec" = {

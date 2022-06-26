@@ -3,7 +3,7 @@ resource "kubernetes_manifest" "deployment_loadgenerator" {
     "apiVersion" = "apps/v1"
     "kind" = "Deployment"
     "metadata" = {
-      "namespace" = "default"
+      "namespace" = "boutique"
       "name" = "loadgenerator"
     }
     "spec" = {
@@ -15,7 +15,7 @@ resource "kubernetes_manifest" "deployment_loadgenerator" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = "default"
+          "namespace" = "boutique"
           "annotations" = {
             "sidecar.istio.io/rewriteAppHTTPProbers" = "true"
           }
