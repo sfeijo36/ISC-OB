@@ -49,7 +49,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 ## Archivos de la implementación
 
-## [Deployment_Infra](./deployment_infra)
+### [Deployment_Infra](./deployment_infra)
 
   En esta carpeta encontraremos los archivos .tf necesarios para el deploy de la infra a implementar. Entre los que se encuentra la configuracion de la red, y el despligue de un Cluster EKS.
 
@@ -79,7 +79,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
   * En este archivo se encuentra el deployment de nuestro cluster, en conjunto con los workers que lo conforman.
   Al igual que en el archivo de red.tf, se utilizan variables mediante el llamado de las mismas con var.nombre_asignado y la referencia de recursos       previamente creados.
   
-## [Deployment_Servicios](./deployment_servicios)
+### [Deployment_Servicios](./deployment_servicios)
 
   En esta carpeta se encontraran los archivos de deployment correspondientes a cada servicio de la solucion.
 
