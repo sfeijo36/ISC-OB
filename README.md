@@ -28,6 +28,12 @@ Capturas - GIFs del funcionamiento de la pagina
        * to_port = 80
        * protocol = "tcp"
        * cidr_blocks = ["0.0.0.0/0"]
+
+    * Reglas Permit de salida:
+        * from_port = 0
+        * to_port = 0
+        * protocol = "-1"
+        * cidr_blocks = ["0.0.0.0/0"]        
   
 
 ## SERVICIOS DE AWS USADOS:
