@@ -23,10 +23,11 @@ Capturas - GIFs del funcionamiento de la pagina
     * Subnet-2: 172.16.2.0/24
     
   * Security Group:
-     from_port = 80
-     to_port = 80
-     protocol = "tcp"
-     cidr_blocks = ["0.0.0.0/0"]
+     Reglas permit de entrada:
+       from_port = 80
+       to_port = 80
+       protocol = "tcp"
+       cidr_blocks = ["0.0.0.0/0"]
   
 
 ## SERVICIOS DE AWS USADOS:
