@@ -105,9 +105,9 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 
 
-__Autores__ 👷 :construction_worker:
+__Autores__ 
 
-> Lucía Castiñeiras
+> Lucía Castiñeiras👩
 
 > Sebastián Feijó
 
