@@ -23,18 +23,21 @@ Capturas - GIFs del funcionamiento de la pagina
     * Subnet-2: 172.16.2.0/24
     
   * Security Group:
-     * Reglas permit de entrada:
-       * from_port = 80
-       * to_port = 80
-       * protocol = "tcp"
-       * cidr_blocks = ["0.0.0.0/0"]
+    * Reglas permit de entrada:
+      * from_port = 80
+      * to_port = 80
+      * protocol = "tcp"
+      * cidr_blocks = ["0.0.0.0/0"]
 
     * Reglas Permit de salida:
-        * from_port = 0
-        * to_port = 0
-        * protocol = "-1"
-        * cidr_blocks = ["0.0.0.0/0"]        
-  
+      * from_port = 0
+      * to_port = 0
+      * protocol = "-1"
+      * cidr_blocks = ["0.0.0.0/0"] 
+             
+  * Zonas de disponibilidad:
+    * us-east-1a
+    * us-east-1b
 
 ## SERVICIOS DE AWS USADOS:
   * VPC
