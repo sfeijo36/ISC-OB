@@ -53,7 +53,7 @@ ETC.
 
 ## Archivos de la implentacion
 
-[Deployment_Infra](./Deployment_Infra)
+[Deployment_Infra](./deployment_infra)
 
 En esta carpeta encontraremos los archivos .tf necesarios para el deploy de la infra a implementar. Entre los que se encuentra la configuracion de la red, y el despligue de un Cluster EKS.
 
