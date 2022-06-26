@@ -51,7 +51,12 @@ Capturas - GIFs del funcionamiento de la pagina
 
 ETC.
 
-Archivos de la implentacion
+## Archivos de la implentacion
+
+* Deployment Infra
+
+En esta carpeta encontraremos los archivos .tf necesarios para el deploy de la infra a implementar. Entre los que se encuentra la configuracion de la red, y el despligue de un Cluster EKS.
+
 
 variables.tf
 
@@ -63,8 +68,24 @@ Se define el provider, en nuestro caso aws con la region a utilizar.
 
 red.tf
 
-Definimos todos los servicios a utilizar en nuestra red, declarando primer
+Definimos todos los servicios a utilizar en nuestra red, declarando primero nuestro vpc con su correspondiente CIDR.
+
+Utilizamos el recurso vpc previamente creado, referenciandolo en los restantes recursos a crear de la siguiente forma:
+
+aws_vpc.vpc-obligatorio.id
+
+Se utilizaron las variables previamente mencionadas, referenciandolas de la siguiente forma:
+
+var.nombre_asignado
+
+eks.tf
+
+En este archivo se encuentra el deployment de nuestro cluster, en conjunto con los workers que lo conforman.
+Al igual que en el archivo de red.tf, se utilizan variables mediante el llamado de las mismas con var.nombre_asignado y la referencia de recursos previamente creados.
   
+Deployment Servicios
+En esta carpeta se encontraran los archivos de deployment correspondientes a cada servicio de la solucion.
+
 Cómo pueden comenzar los usuarios con el proyecto.
 
 Dónde pueden recibir ayuda los usuarios con tu proyecto
