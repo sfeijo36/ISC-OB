@@ -49,7 +49,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
   * ECR (Elastic Container Registry)
 
 
-## Archivos de la implentacion
+## Archivos de la implementación
 
 [Deployment_Infra](./deployment_infra)
 
