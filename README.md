@@ -51,7 +51,19 @@ Capturas - GIFs del funcionamiento de la pagina
 
 ETC.
 
+Archivos de la implentacion
 
+variables.tf
+
+En este archivo almacenamos las variables que utilizaremos en la ejecucion terraform. La ventaja de usar variables en dicho archivo, es que en caso de que cambie algun dato, simplemente se cambiara el valor en dicho archivo, y no en todos los archivos que utilizen ese valor.
+
+provider.tf
+
+Se define el provider, en nuestro caso aws con la region a utilizar.
+
+red.tf
+
+Definimos todos los servicios a utilizar en nuestra red, declarando primer
   
 Cómo pueden comenzar los usuarios con el proyecto.
 
