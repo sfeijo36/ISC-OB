@@ -111,5 +111,5 @@ __Autores__ :muscle:
 
 > Sebastián Feijó :floppy_disk:
 
-> Damian Alvarez 
+> Damián Álvarez :computer:
 
