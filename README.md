@@ -18,8 +18,22 @@ Arquitectura
   Explicación microservicios
   
 DATOS DE LA INFRAESTRUCTURA (TIPO DE INSTANCIA, BLOQUES CIDRs, FIREWALLING, ETC)
+  * CIDR VPC: 172.16.0.0/16
+    * Subnet-1: 172.16.1.0/24
+    * Subnet-2: 172.16.2.0/24
+    
+  * Security Group:
+     from_port = 80
+     to_port = 80
+     protocol = "tcp"
+     cidr_blocks = ["0.0.0.0/0"]
+  
 
-SERVICIOS DE AWS USADOS.
+SERVICIOS DE AWS USADOS:
+  VPC
+  EKS (Elastic Kubernetes Service)
+  Instancia de EC2 (Utilizada como Bastion) 
+  ECR (Elastic Container Registry)
 
 ETC.
 
