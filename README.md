@@ -1,4 +1,6 @@
-(LOGO ONLINE BOUTIQUE)
+<p align="center">
+<img src="docs/Hipster_HeroLogoCyan.svg" width="300" alt="Online Boutique" />
+</p>
 
 Online Boutique es una aplicación de demostración de microservicios nativa de la nube. Online Boutique consta de una aplicación de microservicios de 10 niveles. La aplicación es una aplicación de comercio electrónico basada en la web donde los usuarios pueden buscar artículos, agregarlos al carrito y comprarlos.
 
