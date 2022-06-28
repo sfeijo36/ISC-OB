@@ -149,8 +149,12 @@ output "nombre_variable" {
     
     * En una primera instancia se ejecuta un terraform que ejecutará el contenido de [Deployment_Infra](./deployment_infra).
     * Luego se actualizará el archivo [config](.//deployment_servicios/config) con la información del cluster creado previamente. Este archivo a su vez será utilizado en el [provider](./deployment_servicios/provider.tf) de la ejecución siguiente.
-    * Luego se subiran las imagenes previamente buildeadas manualmente en el bastion hacia ECR, para ello se obtiene de la salidad de [ecr.tf]             (./deployment_infra/ecr.tf) las URL necesarias para el cambio de nombre de nuestras imagenes y posterior push hacia ECR.
-    * Por ultimo ejecuta el terraform con el contenido de [Deployment_Servicios](./deployment_servicios), el cual despliega los servicios tomando como repositorios los       creados en ECR.
+    * Luego se subiran las imágenes previamente buildeadas manualmente en el bastion hacia ECR, para llevar esto a cabo se crean variables dentro del script con la      salida arrojada por el archivo [ecr.tf](./deployment_infra/ecr.tf) de la siguiente forma:
+     ``` 
+    nombre_variable=$(terraform output -raw nombre_variable_output)
+    ``` 
+   Estas variables son utilizadas para renombrar las imagenes locales, y poder realizar el push hacia ECR.
+   * Por ultimo ejecuta el terraform con el contenido de [Deployment_Servicios](./deployment_servicios), el cual despliega los servicios tomando como repositorios los       creados en ECR.
 
 
 ## Autoscaler<a name="id10"></a>
