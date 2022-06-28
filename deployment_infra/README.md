@@ -1,8 +1,5 @@
 # Deployment_Infra
 
-**Índice**
-
-1. [Variables](#id1)
 
   En esta carpeta encontraremos los archivos .tf necesarios para el deploy de la infra a implementar. Entre los que se encuentra la configuracion de la red, y el despligue de un Cluster EKS.
 
