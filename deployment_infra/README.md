@@ -1,11 +1,13 @@
 # Deployment_Infra
 
-[[_TOC_]]
+**Índice**
+
+1. [Variables](#id1)
 
   En esta carpeta encontraremos los archivos .tf necesarios para el deploy de la infra a implementar. Entre los que se encuentra la configuracion de la red, y el despligue de un Cluster EKS.
 
 
-[variables.tf](./deployment_infra/variables.tf)
+[variables.tf](./deployment_infra/variables.tf)<a name="id1"></a>
 
   * En este archivo almacenamos las variables que utilizaremos en la ejecucion terraform. La ventaja de usar variables en dicho archivo, es que en caso de que cambie algun dato, simplemente se cambiara el valor en dicho archivo, y no en todos los archivos que utilizen ese valor.
 
