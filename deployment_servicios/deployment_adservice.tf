@@ -4,7 +4,7 @@ resource "kubernetes_manifest" "deployment_adservice" {
     "kind" = "Deployment"
     "metadata" = {
       "name" = "adservice"
-      "namespace" = kubernetes_namespace.boutique.name
+      "namespace" = "boutique"
     }
     "spec" = {
       "selector" = {
@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "deployment_adservice" {
       }
       "template" = {
         "metadata" = {
-          "namespace" = kubernetes_namespace.boutique.name
+          "namespace" = "boutique"
           "labels" = {
             "app" = "adservice"
           }
@@ -88,7 +88,7 @@ resource "kubernetes_manifest" "service_adservice" {
     "apiVersion" = "v1"
     "kind" = "Service"
     "metadata" = {
-      "namespace" = kubernetes_namespace.boutique.name
+      "namespace" = "boutique"
       "name" = "adservice"
     }
     "spec" = {
