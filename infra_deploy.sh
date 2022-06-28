@@ -59,7 +59,8 @@ sudo su - root -c "docker push $productcatalogservice:latest"
 sudo su - root -c "docker tag adservice:latest $recommendationservice:latest"
 sudo su - root -c "docker push $recommendationservice:latest"
 
-#cd /home/ec2-user/ISC-OB/deployment_servicios
+# Realizo el deploy de los servicios
+cd /home/ec2-user/ISC-OB/deployment_servicios
 terraform init
 terraform apply -auto-approve
 
