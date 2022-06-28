@@ -98,43 +98,43 @@ resource "aws_ecr_repository" "recommendationservice" {
 }
 
 output "adservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.adservice.repository_url
   }
   
 output "cartservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.cartservice.repository_url
   }
   
 output "checkoutservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.checkoutservice.repository_url
   }
   
 output "currencyservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.currencyservice.repository_url
   }
   
 output "emailservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.currencyservice.repository_url
   }
   
 output "frontend" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.frontend.repository_url
   }
   
 output "loadgenerator" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.loadgenerator.repository_url
   }
   
 output "paymentservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.paymentservice.repository_url
   }
   
 output "shippingservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.shippingservice.repository_url
   }
   
 output "productcatalogservice" {
-  value       = aws_ecr_repository.recommendationservice.repository_url
+  value       = aws_ecr_repository.productcatalogservice.repository_url
   }
   
 output "recommendationservice" {
