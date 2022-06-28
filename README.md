@@ -99,29 +99,32 @@ kubectl get hpa -n boutique
   * Definimos todos los servicios a utilizar en nuestra red, declarando primero nuestro vpc con su correspondiente CIDR.
 
   * Utilizamos el recurso vpc previamente creado, referenciandolo en los restantes recursos a crear de la siguiente forma:
-
-    * aws_vpc.vpc-obligatorio.id
+      ```
+      aws_vpc.vpc-obligatorio.id
+      ```
 
    * Se utilizaron las variables previamente mencionadas, referenciandolas de la siguiente forma:
+      ```
+      var.nombre_asignado
+      ```
 
-      * var.nombre_asignado
 
 [eks.tf](./deployment_infra/eks.tf)
 
   * En este archivo se encuentra el deployment de nuestro cluster, en conjunto con los workers que lo conforman.
-  Al igual que en el archivo de red.tf, se utilizan variables mediante el llamado de las mismas con var.nombre_asignado y la referencia de recursos       previamente creados.
+  Al igual que en el archivo de red.tf, se utilizan variables mediante el llamado de las mismas con var.nombre_asignado y la referencia de recursos previamente creados.
   
 [ecr.tf](./deployment_infra/ecr.tf)
    
    * En este archivo se encuentra la creación de los repositorios necesarios para el posterior deploy de nuestros servicios. A su vez, luego de creados dichos repositorios obtendremos para cada uno de ellos mediante el recurso "output" el valor de su URL. 
+Para ello se implemento de la siguiente forma:
 
-   * Para ello se implemento de la siguiente forma:
-
+```
 output "nombre_variable" {
   value       = aws_ecr_repository.nombre_repositorio.repository_url
   }
-  
-  * Valor que se utilizara luego en el [infra_deploy.sh](./infra_deploy.sh) para el push de imágenes hacia ECR.
+``` 
+  Valor que se tomara como variable y utilizado luego en el [infra_deploy.sh](./infra_deploy.sh) para el push de imágenes hacia ECR.
 
   
 ### [Deployment_Servicios](./deployment_servicios)<a name="id8"></a>
@@ -131,7 +134,6 @@ output "nombre_variable" {
 [variables.tf](./deployment_servicios/variables.tf)
 
   * Utilizamos variables para las imagenes creadas en ECR, que luego seran utilizadas en cada deployment.
-
   * Existe un archivo .tf para cada servicio que requiere nuestra aplicacion web. Cada uno de ellos fue creado en formato terraform a partir de un archivo yaml.
   * En cada uno de estos archivos de deployment, la imagen esta como variable la cual es tomada de nuestro archivo de variables.
 
