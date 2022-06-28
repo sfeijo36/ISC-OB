@@ -12,7 +12,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 <img src="docs/Multimedia1.gif" width="800" alt="Funcionamiento de la página" />
 </p>
 
-## Prerrequisitos
+## Prerequisitos
 
 Al tratarse de un ambiente educate, antes de ejecutar el [infra_deploy.sh](./infra_deploy.sh), se debe actualizar el archivo credentials tanto del usuario ec2-user como de root, en el servidor bastion.
 
@@ -128,7 +128,7 @@ kubectl get hpa -n boutique
 Se implemento un Horizontal Pod Autoscaler, para poder escalar pods basado en el consumo de CPU. A modo de ejemplo se realizo un HPA en el pod del fronted.
 El cual mediante pruebas de carga se podra verificar el funcionamiento.
 
-En primera instancia se tuvo que instalar un Metrics Server, para poder medir el consumo de dichos recuros.  Y luego se creo el autoscale sobre el deployment deseado
+En primera instancia se tuvo que instalar un Metrics Server, para poder medir el consumo de dichos recursos.  Y luego se creo el autoscale sobre el deployment deseado
 
 <p align="center">
 <img src="docs/metric.jpg" width="800" alt="metric" />
