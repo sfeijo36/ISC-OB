@@ -15,7 +15,7 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 ## Arquitectura
 
 <p align="center">
-<img src="docs/Diagrama.png" width="800" alt="Diagrama" />
+<img src="docs/Diagrama2.png" width="800" alt="Diagrama" />
 </p>
 
   
