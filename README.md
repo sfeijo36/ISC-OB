@@ -14,18 +14,18 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 **Índice**
 
-1. [Prerequisitos](#id1)
+1. [Prerrequisitos](#id1)
 2. [Comandos utiles](#id2)
 3. [Arquitectura](#id3)
 4. [Datos de la Infraestructura](#id4)
-5. [SERVICIOS DE AWS USADOS](#id5)
+5. [Servicios de AWS usados](#id5)
 6. [Archivos de la implementación](#id6)<br>
    6.1 [Deployment_Infra](#id7)<br>
    6.2 [Deployment_Servicios](#id8)<br>
 7. [Deploy automatizado](#id9)
 8. [Autoscaler](#id10)
 
-## Prerequisitos<a name="id1"></a>
+## Prerrequisitos<a name="id1"></a>
 
 Al tratarse de un ambiente educate, antes de ejecutar el [infra_deploy.sh](./infra_deploy.sh), se debe actualizar el archivo credentials tanto del usuario ec2-user como de root, en el servidor bastion.
 
