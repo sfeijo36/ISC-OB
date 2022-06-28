@@ -12,9 +12,16 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 <img src="docs/Multimedia1.gif" width="800" alt="Funcionamiento de la página" />
 </p>
 
-## Pre requisitos
+## Prerrequisitos
 
 Al tratarse de un ambiente educate, antes de ejecutar el [infra_deploy.sh](./infra_deploy.sh), se debe actualizar el archivo credentials tanto del usuario ec2-user como de root, en el servidor bastion.
+
+En este caso utilizaremos un bastion, que ya cuenta con lo necesario para la ejecucion satisfactoria del scritp. En caso de querer ejecutarlo en otra instacia o equipo, se debera:
+
+- Instalar terraform.
+- Instalar docker.
+- Realizar la aws configure y actualizar el archivo credentials.
+- Instalar cliente kubectl.
 
 
 ## Arquitectura
