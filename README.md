@@ -20,8 +20,8 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 4. [Datos de la Infraestructura](#id4)
 5. [SERVICIOS DE AWS USADOS](#id5)
 6. [Archivos de la implementación](#id6)
-  6.1 [Deployment_Infra](#id7)
-  6.2 [Deployment_Servicios](#id8)
+   6.1 [Deployment_Infra](#id7)
+   6.2 [Deployment_Servicios](#id8)
 7. [Deploy automatizado](#id9)
 8. [Autoscaler](#id10)
 
@@ -47,7 +47,7 @@ kubectl get hpa -n boutique
 ## Arquitectura<a name="id3"></a>
 
 <p align="center">
-<img src="docs/Diagrama2.png" width="800" alt="Diagrama" />
+<img src="docs/Diagrama_arq.png" width="800" alt="Diagrama" />
 </p>
 
   
