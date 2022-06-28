@@ -2,7 +2,7 @@ provider "kubernetes" {
   config_path    = "./config"
 }
 
-resource "kubernetes_namespace" "example" {
+resource "kubernetes_namespace" "boutique" {
   metadata {
     name = "boutique"
   }
