@@ -106,7 +106,23 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 
 ## Autoscaler
 
+Se implemento un Horizontal Pod Autoscaler, para poder escalar pods basado en el consumo de CPU. A modo de ejemplo se realizo un HPA en el pod del fronted.
+El cual mediante pruebas de carga se podra verificar el funcionamiento.
 
+En primera instancia se tuvo que instalar un Metrics Server, para poder medir el consumo de dichos recuros.  Y luego se creo el autoscale sobre el deployment deseado
+
+<p align="center">
+<img src="docs/metric.png" width="800" alt="Diagrama" />
+</p>
+
+kubectl autoscale deployment fronted -n boutique --cpu-percent=50 --min=1 --max=10
+
+Estableciendo la cantidad de CPU, que llegado a dicho limite se genere una nueva instancia de dicho pod.
+
+Verificamos la creacion del HPA.
+<p align="center">
+<img src="docs/hpa.png" width="800" alt="Diagrama" />
+</p>
 
 
 __Autores__ :muscle:
