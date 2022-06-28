@@ -112,7 +112,7 @@ El cual mediante pruebas de carga se podra verificar el funcionamiento.
 En primera instancia se tuvo que instalar un Metrics Server, para poder medir el consumo de dichos recuros.  Y luego se creo el autoscale sobre el deployment deseado
 
 <p align="center">
-<img src="docs/metric.png" width="800" alt="metric" />
+<img src="docs/metric.jpg" width="800" alt="metric" />
 </p>
 
 kubectl autoscale deployment fronted -n boutique --cpu-percent=50 --min=1 --max=10
@@ -121,7 +121,7 @@ Estableciendo la cantidad de CPU, que llegado a dicho limite se genere una nueva
 
 Verificamos la creacion del HPA.
 <p align="center">
-<img src="docs/hpa.png" width="800" alt="hpa" />
+<img src="docs/hpa.jpg" width="800" alt="hpa" />
 </p>
 
 
