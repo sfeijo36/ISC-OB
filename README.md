@@ -12,7 +12,14 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 <img src="docs/Multimedia1.gif" width="800" alt="Funcionamiento de la página" />
 </p>
 
-## Prerequisitos
+**Índice**
+
+1. [Prerequisitos](#id1)
+2. [Comandos utiles](#id2)
+3. [Arquitectura](#id3)
+4. [Datos de la Infraestructura](#id4)
+
+## Prerequisitos<a name="id1"></a>
 
 Al tratarse de un ambiente educate, antes de ejecutar el [infra_deploy.sh](./infra_deploy.sh), se debe actualizar el archivo credentials tanto del usuario ec2-user como de root, en el servidor bastion.
 
@@ -23,7 +30,7 @@ En este caso utilizaremos un bastion, que ya cuenta con lo necesario para la eje
 - Realizar la aws configure y actualizar el archivo credentials.
 - Instalar cliente kubectl.
 
-### Comandos utiles
+### Comandos utiles<a name="id2"></a>
 
 kubectl get all -n boutique
 
@@ -31,14 +38,14 @@ kubectl get hpa -n boutique
 
 
 
-## Arquitectura
+## Arquitectura<a name="id3"></a>
 
 <p align="center">
 <img src="docs/Diagrama2.png" width="800" alt="Diagrama" />
 </p>
 
   
-## DATOS DE LA INFRAESTRUCTURA
+## DATOS DE LA INFRAESTRUCTURA<a name="id4"></a>
 
   * Tipo de instancias:
     * t3.large
