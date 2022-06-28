@@ -11,14 +11,15 @@ cd /home/ec2-user/ISC-OB/deployment_servicios
 terraform init
 terraform apply -auto-approve
 
-# Instalacion del metrics server
-# kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+# Obtengo la url del loadbalancer
+url=$(kubectl get all -n boutique | grep -o .*.us-east-1.elb.amazonaws.com | awk '{print $NF}')
 
-# Instalacion del horizontal autoscaler
-# kubectl apply -f https://k8s.io/examples/application/php-apache.yaml
-# kubectl autoscale deployment php-apache --cpu-percent=75 --min=1 --max=10
+# Instalacion del metrics server
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+# Instalacion del horizontal autoscaler sobre el frontend
+kubectl autoscale deployment frontend -n boutique --cpu-percent=30 --min=1 --max=10
 
 # Genero tráfico sobre la página
-# kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://php-apache; done"
-
+# kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://$url; done"
 
