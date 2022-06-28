@@ -12,6 +12,11 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 <img src="docs/Multimedia1.gif" width="800" alt="Funcionamiento de la página" />
 </p>
 
+## Pre requisitos
+
+Al tratarse de un ambiente educate, antes de ejecutar el [infra_deploy.sh](./infra_deploy.sh), se debe actualizar el archivo credentials tanto del usuario ec2-user como de root, en el servidor bastion.
+
+
 ## Arquitectura
 
 <p align="center">
