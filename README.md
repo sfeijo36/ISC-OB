@@ -41,7 +41,7 @@ kubectl get hpa -n boutique
 ## Arquitectura<a name="id3"></a>
 
 <p align="center">
-<img src="docs/Diagrama2.png" width="800" alt="Diagrama" />
+<img src="docs/Diagrama.png" width="800" alt="Diagrama" />
 </p>
 
   
