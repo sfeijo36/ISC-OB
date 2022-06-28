@@ -19,9 +19,9 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 3. [Arquitectura](#id3)
 4. [Datos de la Infraestructura](#id4)
 5. [SERVICIOS DE AWS USADOS](#id5)
-6. [Archivos de la implementación](#id6)
-   6.1 [Deployment_Infra](#id7)
-   6.2 [Deployment_Servicios](#id8)
+6. [Archivos de la implementación](#id6)<br>
+   6.1 [Deployment_Infra](#id7)<br>
+   6.2 [Deployment_Servicios](#id8)<br>
 7. [Deploy automatizado](#id9)
 8. [Autoscaler](#id10)
 
