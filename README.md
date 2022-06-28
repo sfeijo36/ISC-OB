@@ -153,7 +153,7 @@ output "nombre_variable" {
      ``` 
     nombre_variable=$(terraform output -raw nombre_variable_output)
     ``` 
-   Estas variables son utilizadas para renombrar las imagenes locales, y poder realizar el push hacia ECR.
+      Estas variables son utilizadas para renombrar las imagenes locales, y poder realizar el push hacia ECR.
    * Por ultimo ejecuta el terraform con el contenido de [Deployment_Servicios](./deployment_servicios), el cual despliega los servicios tomando como repositorios los       creados en ECR.
 
 
