@@ -111,6 +111,19 @@ kubectl get hpa -n boutique
   * En este archivo se encuentra el deployment de nuestro cluster, en conjunto con los workers que lo conforman.
   Al igual que en el archivo de red.tf, se utilizan variables mediante el llamado de las mismas con var.nombre_asignado y la referencia de recursos       previamente creados.
   
+[ecr.tf](./deployment_infra/ecr.tf)
+   
+   * En este archivo se encuentra la creación de los repositorios necesarios para el posterior deploy de nuestros servicios. A su vez, luego de creados dichos repositorios obtendremos para cada uno de ellos mediante el recurso "output" el valor de su URL. 
+
+   * Para ello se implemento de la siguiente forma:
+
+output "nombre_variable" {
+  value       = aws_ecr_repository.nombre_repositorio.repository_url
+  }
+  
+  * Valor que se utilizara luego en el [infra_deploy.sh](./infra_deploy.sh) para el push de imágenes hacia ECR.
+
+  
 ### [Deployment_Servicios](./deployment_servicios)<a name="id8"></a>
 
   En esta carpeta se encontraran los archivos de deployment correspondientes a cada servicio de la solucion.
