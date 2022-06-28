@@ -23,6 +23,13 @@ En este caso utilizaremos un bastion, que ya cuenta con lo necesario para la eje
 - Realizar la aws configure y actualizar el archivo credentials.
 - Instalar cliente kubectl.
 
+# Comandos utiles
+
+kubectl get all -n boutique
+
+kubectl get hpa -n boutique
+
+
 
 ## Arquitectura
 
