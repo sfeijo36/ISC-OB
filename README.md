@@ -18,6 +18,12 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
 2. [Comandos utiles](#id2)
 3. [Arquitectura](#id3)
 4. [Datos de la Infraestructura](#id4)
+5. [SERVICIOS DE AWS USADOS](#id5)
+6. [Archivos de la implementación](#id6)
+  6.1 [Deployment_Infra](#id7)
+  6.2 [Deployment_Servicios](#id8)
+7. [Deploy automatizado](#id9)
+8. [Autoscaler](#id10)
 
 ## Prerequisitos<a name="id1"></a>
 
@@ -41,7 +47,7 @@ kubectl get hpa -n boutique
 ## Arquitectura<a name="id3"></a>
 
 <p align="center">
-<img src="docs/Diagrama_arq.png" width="800" alt="Diagrama" />
+<img src="docs/Diagrama2.png" width="800" alt="Diagrama" />
 </p>
 
   
@@ -66,16 +72,16 @@ kubectl get hpa -n boutique
     * us-east-1a
     * us-east-1b
 
-## SERVICIOS DE AWS USADOS:
+## SERVICIOS DE AWS USADOS<a name="id1"></a>
   * VPC
   * EKS (Elastic Kubernetes Service)
   * Instancia de EC2 (Utilizada como Bastion) 
   * ECR (Elastic Container Registry)
 
 
-## Archivos de la implementación
+## Archivos de la implementación<a name="id6"></a>
 
-### [Deployment_Infra](./deployment_infra)
+### [Deployment_Infra](./deployment_infra)<a name="id7"></a>
 
   En esta carpeta encontraremos los archivos .tf necesarios para el deploy de la infra a implementar. Entre los que se encuentra la configuracion de la red, y el despligue de un Cluster EKS.
 
@@ -105,7 +111,7 @@ kubectl get hpa -n boutique
   * En este archivo se encuentra el deployment de nuestro cluster, en conjunto con los workers que lo conforman.
   Al igual que en el archivo de red.tf, se utilizan variables mediante el llamado de las mismas con var.nombre_asignado y la referencia de recursos       previamente creados.
   
-### [Deployment_Servicios](./deployment_servicios)
+### [Deployment_Servicios](./deployment_servicios)<a name="id8"></a>
 
   En esta carpeta se encontraran los archivos de deployment correspondientes a cada servicio de la solucion.
 
@@ -120,7 +126,7 @@ kubectl get hpa -n boutique
 
   * Este archivo contiene la informacion de nuestro cluster EKS, previamente creado mediante el deploy de nuestra infra. El mismo es necesario para utilizar en el archivo de [provider.tf](./deployment_servicios/provider.tf).
 
-### Deploy automatizado
+### Deploy automatizado<a name="id9"></a>
 
 [infra_deploy.sh](./infra_deploy.sh)
 
@@ -130,7 +136,7 @@ kubectl get hpa -n boutique
     * Por ultimo ejecuta el terraform con el contenido de [Deployment_Servicios](./deployment_servicios)
 
 
-## Autoscaler
+## Autoscaler<a name="id10"></a>
 
 Se implemento un Horizontal Pod Autoscaler, para poder escalar pods basado en el consumo de CPU. A modo de ejemplo se realizo un HPA en el pod del fronted.
 El cual mediante pruebas de carga se podra verificar el funcionamiento.
