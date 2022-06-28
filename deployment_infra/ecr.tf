@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "adservice" {
-  name                 = "adservice"
+  name                 = "adservice_ob"
   image_tag_mutability = "MUTABLE"
 
     image_scanning_configuration {
@@ -8,7 +8,7 @@ resource "aws_ecr_repository" "adservice" {
 }
 
 resource "aws_ecr_repository" "cartservice" {
-  name                 = "cartservice"
+  name                 = "cartservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -17,7 +17,7 @@ resource "aws_ecr_repository" "cartservice" {
 }
 
 resource "aws_ecr_repository" "checkoutservice" {
-  name                 = "checkoutservice"
+  name                 = "checkoutservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -26,7 +26,7 @@ resource "aws_ecr_repository" "checkoutservice" {
 }
 
 resource "aws_ecr_repository" "currencyservice" {
-  name                 = "currencyservice"
+  name                 = "currencyservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -35,7 +35,7 @@ resource "aws_ecr_repository" "currencyservice" {
 }
 
 resource "aws_ecr_repository" "emailservice" {
-  name                 = "emailservice"
+  name                 = "emailservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -44,7 +44,7 @@ resource "aws_ecr_repository" "emailservice" {
 }
 
 resource "aws_ecr_repository" "frontend" {
-  name                 = "frontend"
+  name                 = "frontend_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -53,7 +53,7 @@ resource "aws_ecr_repository" "frontend" {
 }
 
 resource "aws_ecr_repository" "loadgenerator" {
-  name                 = "loadgenerator"
+  name                 = "loadgenerator_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -62,7 +62,7 @@ resource "aws_ecr_repository" "loadgenerator" {
 }
 
 resource "aws_ecr_repository" "paymentservice" {
-  name                 = "paymentservice"
+  name                 = "paymentservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -71,7 +71,7 @@ resource "aws_ecr_repository" "paymentservice" {
 }
 
 resource "aws_ecr_repository" "shippingservice" {
-  name                 = "shippingservice"
+  name                 = "shippingservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -80,7 +80,7 @@ resource "aws_ecr_repository" "shippingservice" {
 }
 
 resource "aws_ecr_repository" "productcatalogservice" {
-  name                 = "productcatalogservice"
+  name                 = "productcatalogservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -89,7 +89,7 @@ resource "aws_ecr_repository" "productcatalogservice" {
 }
 
 resource "aws_ecr_repository" "recommendationservice" {
-  name                 = "recommendationservice"
+  name                 = "recommendationservice_ob"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
