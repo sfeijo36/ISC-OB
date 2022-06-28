@@ -104,6 +104,10 @@ Online Boutique es una aplicación de demostración de microservicios nativa de 
     * Por ultimo ejecuta el terraform con el contenido de [Deployment_Servicios](./deployment_servicios)
 
 
+## Autoscaler
+
+
+
 
 __Autores__ :muscle:
 
